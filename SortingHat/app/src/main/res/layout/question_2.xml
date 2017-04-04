@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sorting">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which road tempts you most?"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:textColor="@color/darkYellow"
+        android:buttonTint="@color/darkYellow"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/radio">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"
+            android:text="The twisting, leaf-strewn path through woods"
+            android:textSize="20dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:text="The cobbled street lined with ancient buildings"
+            android:textSize="20dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb3"
+            android:text=" The wide, sunny, grassy lane"
+            android:textSize="20dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb4"
+            android:text="The narrow, dark, lantern-lit alley"
+            android:textSize="20dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+    </RadioGroup>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next>>"
+        android:id="@+id/button2"
+        android:background="@color/Transparent"
+        android:textColor="@color/darkYellow"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:onClick="onButtonClick" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

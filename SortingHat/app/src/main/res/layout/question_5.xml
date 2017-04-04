@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sorting">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which nightmare would frighten you most?"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/darkYellow"
+
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/radio">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"
+            android:text="An eye at the keyhole of the dark, windowless room in which you are locked."
+            android:textSize="15dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:text="Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling."
+            android:textSize="15dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb3"
+            android:text="Waking up to find that neither your friends nor your family have any idea who you are."
+            android:textSize="15dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb4"
+            android:text="Being forced to speak in such a silly voice that hardly anyone can understand you, and everyone laughs at you."
+            android:textSize="15dp"
+            android:textColor="@color/darkYellow"
+            android:buttonTint="@color/darkYellow"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"/>
+    </RadioGroup>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next>>"
+        android:id="@+id/button2"
+        android:background="@color/Transparent"
+        android:textColor="@color/darkYellow"
+
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:onClick="onButtonClick" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
