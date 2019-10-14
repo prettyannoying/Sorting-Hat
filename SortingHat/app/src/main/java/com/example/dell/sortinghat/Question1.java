@@ -44,8 +44,6 @@ public class Question1 extends Activity{
 
                 Intent i = new Intent(Question1.this, Question2.class);
                 i.putExtra("Something",group.getCheckedRadioButtonId());
-               // i.putExtra("kuch_aur", "kuch hbhi");
-                //getIntent().putCharSequenceArrayListExtra(group.getCheckedRadioButtonId());
                 startActivity(i);
             }
         }
